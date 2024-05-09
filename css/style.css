@@ -81,7 +81,7 @@ h1{
 
 #logo
 {
-	background-color: #515151;
+	background-color: var(--text-black);
 	padding: 40px 0px;
 	color:white;
 }
