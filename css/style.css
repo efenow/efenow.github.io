@@ -3,18 +3,24 @@
 :root
 {
 	--text-black: #0f172a;
+	--background-black: #141414;
+	--text-white: #D3D3D3;
+	--background-grey: #141414;
+	--card-color: #171717;
+	--card-color-hover: #474747;
+	--text-grey: #737373;
 }
 
 body{
 	font-family: "Inter",Helvecita,Arial;
 	margin: 0;
 	font-weight: 600;
-	background-color: #D3D3D3;
+	background-color: var(--background-black);
 }
 
 ::selection
 {
-	background-color: var(--text-black);
+	background-color: var(--background-black);
 	color: white;
 }
 
@@ -30,7 +36,7 @@ body{
 
 #benkimim{
 	font-size: 30px;
-	color: var(--text-black);
+	color: var(--text-white);
 	text-align: center;
 	line-height: 200%;
 	padding: 20px 0px;
@@ -72,7 +78,7 @@ h1{
 	float: left;
 	width: 510px;
 	padding: 25px 0px;
-	color: var(--text-black);
+	color: var(--text-white);
 }
 
 .temizle{
@@ -81,35 +87,52 @@ h1{
 
 #logo
 {
-	background-color: var(--text-black);
+	background-color: var(--background-black);
 	padding: 40px 0px;
-	color:white;
+	color: var(--text-white);
 }
 
 .logokutusu
 {
 	float: left;
-	background-color: white;
 	height: 190px;
 	width: 190px;
 	margin:20px 10px;
 	padding: 40px 30px 30px 30px;
-	border-radius: 20px;
+	border-radius: 10px;
 	text-align: center; 
+	background-color: var(--card-color);
+	color: var(--text-white);
+
 }
 
-.logokutusu:hover
-{
-	background-color: steelblue;
+.logokutusu:hover::before {
+	opacity: 1;
 }
+
+.logokutusu:hover{
+	opacity: 0.5;
+	background-color: var(--card-color-hover);
+	-webkit-transition: background 1s;
+	transition: 1s;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
 
 #iletisim
 {
-	background-color: white;
+	background-color: var(--background-grey);
 	text-align: center;
-	color: var(--text-black);
+	color: var(--text-white);
 	padding: 20px 0px 20px 0px;
 	line-height: 150%;
+}
+
+#iletisim:hover{
+	color: var(--text-white);
+	transition: color 0.5s;
+	-webkit-transition: color 0.5s;
 }
 
 #iletisim p
@@ -136,12 +159,14 @@ h1{
 a
 {
 	text-decoration: underline;
-	color: var(--text-black);
+	color: var(--text-white);
 }
 
 a:hover
 {
-	color: steelblue;
+	color: var(--text-grey);
+	transition: color 0.5s;
+	-webkit-transition: color 0.5s;
 }
 
 p{
