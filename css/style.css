@@ -8,7 +8,7 @@
 	--background-grey: #141414;
 	--card-color: #171717;
 	--card-color-hover: #474747;
-	--text-grey: #737373;
+	--text-grey: #747474;
 }
 
 body{
@@ -18,10 +18,12 @@ body{
 	background-color: var(--background-black);
 }
 
+
+
 ::selection
 {
-	background-color: var(--background-black);
-	color: white;
+	background-color: var(--text-white);
+	color: var(--text-black);
 }
 
 #baslik{
@@ -173,6 +175,12 @@ p{
 	font-size: 20px;
 }
 
+#footer-github
+{
+	margin-top: 15px;
+}
+
+
 
 /* Slider */
 
@@ -264,3 +272,4 @@ p{
   from {opacity: .4}
   to {opacity: 1}
 }
+
