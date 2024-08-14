@@ -282,3 +282,61 @@ p{
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.material-symbols-outlined {
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 48
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.alert {
+	--foreground-color: #222222;
+	--background-color: #eeeeee;
+
+	display: flex;
+	align-items: center;
+	padding: 1em;
+	box-sizing: border-box;
+	border-radius: 5px;
+	width: 100%;
+	background-color: var(--background-color);
+}
+
+.alert-icon {
+	display: flex;
+	align-items: center;
+}
+
+.alert-text {
+	margin-left: 1em;
+	font-size: 1.15em;
+	font-weight: 500;
+	font-family: 'Lexend', sans-serif;
+}
+
+.alert-icon .material-symbols-outlined,
+.alert-text {
+	color: var(--foreground-color);
+}
+
+.alert-warning {
+	--foreground-color: #000000;
+	--background-color: #ecd103;
+}
+
+.alert-success {
+	--foreground-color: #ffffff;
+	--background-color: #46b63e;
+}
+
+.alert-error {
+	--foreground-color: #ffffff;
+	--background-color: #cb0000;
+}
