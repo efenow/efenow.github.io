@@ -318,12 +318,11 @@ p{
 	margin-left: 1em;
 	font-size: 1.15em;
 	font-weight: 500;
-	font-family: 'Lexend', sans-serif;
 }
 
 .alert-icon .material-symbols-outlined,
 .alert-text {
-	color: var(--foreground-color);
+	color: #ebebeb;
 }
 
 .alert-warning {
