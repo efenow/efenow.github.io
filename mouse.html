@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>efenow | Don't Move your Mouse!</title>
+    <link rel="stylesheet" href="css/mouse.css">
+</head>
+<body>
+<h1 id="baslik">Do not move your mouse.</h1>
+<div id="stopwatch">0.0</div>
+
+<footer id="footer-text"><a>efenow.xyz</a></footer>
+
+<script>
+    let startTime;
+    let interval;
+
+    function startStopwatch() {
+        startTime = Date.now();
+        interval = setInterval(updateStopwatch, 100);
+    }
+
+    function updateStopwatch() {
+        const elapsedTime = (Date.now() - startTime) / 1000;
+        document.getElementById('stopwatch').textContent = elapsedTime.toFixed(1);
+    }
+
+    function resetStopwatch() {
+        clearInterval(interval);
+        startStopwatch();
+    }
+
+    document.body.onmousemove = resetStopwatch;
+
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            resetStopwatch();
+        }
+    });
+
+    // Start the stopwatch initially
+    startStopwatch();
+</script>
+</body>
+</html>
