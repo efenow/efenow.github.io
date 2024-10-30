@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --text-black: #0f172a;
+    --background-black: #141414;
+    --text-white: #D3D3D3;
+    --background-grey: #141414;
+    --card-color: #171717;
+    --card-color-hover: #474747;
+    --text-grey: #747474;
+}
+
+body {
+    font-family: "Inter", Helvecita, Arial;
+    margin: 0;
+    font-weight: 600;
+    background-color: var(--background-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+::selection {
+    background-color: var(--text-white);
+    color: var(--text-black);
+}
+
+#baslik {
+    color: var(--text-white);
+    text-align: center;
+    padding: 20px 0;
+}
+
+#stopwatch {
+    color: var(--text-white);
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer-text {
+    color: var(--text-white);
+    position: absolute;
+    bottom: 17px;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    color: var(--text-grey);
+    text-decoration: none;
+}
