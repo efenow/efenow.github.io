@@ -339,3 +339,9 @@ p{
 	--foreground-color: #ffffff;
 	--background-color: #cb0000;
 }
+
+/* 01.05.2025 - By cinarozkan */
+.LinkLogo {
+	color: rgb(216, 216, 216);
+	font-weight: 600;
+}
