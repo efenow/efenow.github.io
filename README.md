@@ -1,2 +1,2 @@
 # My portfolio website.
-[![https://status.efenow.xyz/api/badge/1/response]
+[![Response Badge](https://status.efenow.xyz/api/badge/1/response)] [![Ping Badge](https://status.efenow.xyz/api/badge/1/ping)]
